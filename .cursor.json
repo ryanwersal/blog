@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "blog_post_metadata": {
+      "files": "content/posts/*.md",
+      "checks": [
+        {
+          "name": "filename_title_match",
+          "description": "Filename must match the title metadata (ignoring case and hyphenation)",
+          "pattern": {
+            "filename": "^(?!_)([a-z0-9-]+)\\.md$",
+            "content": "^---\\s*\\ntitle:\\s*\"[^\"]*\"\\s*\\n",
+            "validate": "The filename (without extension) should match the title in the frontmatter when converted to lowercase and spaces replaced with hyphens"
+          }
+        },
+        {
+          "name": "date_format",
+          "description": "Date metadata must include both date and time in ISO 8601 format with timezone",
+          "pattern": {
+            "content": "^---\\s*\\n(?:[^\\n]*\\n)*date:\\s*\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}[+-]\\d{2}:\\d{2}\\s*\\n",
+            "message": "Date must be in format YYYY-MM-DDThh:mm:ss±hh:mm"
+          }
+        }
+      ]
+    }
+  }
+} 

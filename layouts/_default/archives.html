@@ -1,0 +1,55 @@
+{{ define "main" }}
+<div class="archive-page">
+    <h1>{{ .Title }}</h1>
+    {{ $pages := where .Site.RegularPages "Section" "posts" }}
+    {{ range $pages.GroupByDate "2006" }}
+    <div class="archive-year">
+        <h2>{{ .Key }}</h2>
+        {{ range .Pages.GroupByDate "January" }}
+        <div class="archive-month">
+            <h3>{{ .Key }}</h3>
+            <ul>
+                {{ range .Pages }}
+                <li>
+                    <span class="archive-date">{{ .Date.Format "01-02" }}</span>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+
+<style>
+.archive-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.archive-year {
+    margin-bottom: 40px;
+}
+
+.archive-month {
+    margin-bottom: 20px;
+}
+
+.archive-date {
+    display: inline-block;
+    min-width: 60px;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 8px 0;
+}
+</style>
+{{ end }} 

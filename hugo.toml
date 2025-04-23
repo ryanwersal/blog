@@ -1,0 +1,51 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Ryan Wersal - Learnings"
+theme = "paper"
+
+# Enable tags and categories
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  # Color theme: light, dark, or auto
+  color = "auto"
+  
+  # Show word count and reading time
+  showWordCount = true
+  showReadingTime = true
+  
+  # Show date in your locale's format
+  dateFormat = "January 2, 2006"
+  
+  # Social links
+  github = "ryanwersal" # Add your GitHub username
+  
+  # Number of posts per page
+  paginate = 10
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 20
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "github"

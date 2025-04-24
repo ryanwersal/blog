@@ -14,17 +14,18 @@
         },
         {
           "name": "date_format",
-          "description": "Date metadata must include both date and time in ISO 8601 format with timezone",
+          "description": "Date metadata must include both date and time in ISO 8601 format with timezone, and must use today's date",
           "pattern": {
             "content": "^---\\s*\\n(?:[^\\n]*\\n)*date:\\s*\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}[+-]\\d{2}:\\d{2}\\s*\\n",
-            "message": "Date must be in format YYYY-MM-DDThh:mm:ss±hh:mm"
-          }
+            "message": "Date must be in format YYYY-MM-DDThh:mm:ss±hh:mm and must use today's date"
+          },
+          "validate": "The date in the frontmatter must be today's date. Future dates are not allowed."
         },
         {
           "name": "emoji_in_title",
           "description": "Title must start with an emoji followed by a space",
           "pattern": {
-            "content": "^---\\s*\\ntitle:\\s*\"[\\p{Emoji_Presentation}\\p{Extended_Pictographic}]\\s+[^\"]+\"\\s*\\n",
+            "content": "^---\\s*\\ntitle:\\s*\"[\\p{Emoji_Presentation}\\p{Extended_Pictographic}]\\s+[^\"]*\"\\s*\\n",
             "message": "Title must start with an emoji followed by a space"
           }
         }

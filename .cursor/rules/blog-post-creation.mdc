@@ -14,17 +14,17 @@ alwaysApply: false
 ## Date and Time
 Use the following command to generate the correct date format:
 ```bash
-date -u +"%Y-%m-%dT%H:%M:%S%:z"
+date -u +"%Y-%m-%dT%H:%M:%SZ"
 ```
 - The date must be today's date (future dates are not allowed)
-- Always include the timezone offset
-- Example output: 2024-04-29T14:30:00-05:00
+- Always use UTC (indicated by the Z suffix)
+- Example output: 2024-04-29T14:30:00Z
 
 ## Frontmatter Template
 ```yaml
 ---
 title: "🚀 Your Post Title"
-date: 2024-04-29T14:30:00-05:00
+date: 2024-04-29T14:30:00Z
 ---
 ```
 

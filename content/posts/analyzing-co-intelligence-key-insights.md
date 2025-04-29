@@ -1,6 +1,6 @@
 ---
 title: "📚 Analyzing Co-Intelligence: Collaborating with AI"
-date: 2025-04-24T10:00:00-07:00
+date: 2025-04-24T17:00:00Z
 draft: false
 tags: ["ai", "books", "analysis"]
 categories: ["ai"]

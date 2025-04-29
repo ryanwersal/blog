@@ -1,6 +1,6 @@
 ---
 title: "👋 Hey there!"
-date: 2025-04-22T10:00:00-07:00
+date: 2025-04-22T17:00:00Z
 draft: false
 tags: ["welcome", "first-post", "ai"]
 categories: ["general"]

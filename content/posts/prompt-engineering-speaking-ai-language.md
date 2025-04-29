@@ -1,6 +1,6 @@
 ---
 title: "🗣️ Prompt Engineering: Speaking AI's Language"
-date: 2025-04-23T14:00:00-07:00
+date: 2025-04-23T21:00:00Z
 draft: false
 tags: ["ai", "prompts", "engineering"]
 categories: ["ai"]

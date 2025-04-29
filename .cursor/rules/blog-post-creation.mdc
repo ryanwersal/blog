@@ -1,0 +1,35 @@
+---
+description: Creating a new blog post
+globs: 
+alwaysApply: false
+---
+# Creating a New Blog Post
+
+## Title and Filename
+- Start the title with an appropriate emoji followed by a space
+- The filename (without extension) must match the title when converted to lowercase with spaces replaced by hyphens
+- Example: If title is "🚀 My Great Post", filename should be "my-great-post.md"
+- Files starting with underscore (_) are exempt from these rules
+
+## Date and Time
+Use the following command to generate the correct date format:
+```bash
+date -u +"%Y-%m-%dT%H:%M:%S%:z"
+```
+- The date must be today's date (future dates are not allowed)
+- Always include the timezone offset
+- Example output: 2024-04-29T14:30:00-05:00
+
+## Frontmatter Template
+```yaml
+---
+title: "🚀 Your Post Title"
+date: 2024-04-29T14:30:00-05:00
+---
+```
+
+## Best Practices
+1. Choose an emoji that represents the content of your post
+2. Keep filenames short but descriptive
+3. Use the CLI command to ensure correct date formatting
+4. Double-check that the filename matches the title format

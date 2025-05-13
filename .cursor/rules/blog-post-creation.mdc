@@ -25,6 +25,7 @@ date -u +"%Y-%m-%dT%H:%M:%SZ"
 ---
 title: "🚀 Your Post Title"
 date: 2024-04-29T14:30:00Z
+tags: ["tag1", "tag2", "tag3"]
 ---
 ```
 
@@ -33,3 +34,6 @@ date: 2024-04-29T14:30:00Z
 2. Keep filenames short but descriptive
 3. Use the CLI command to ensure correct date formatting
 4. Double-check that the filename matches the title format
+5. Include 2-5 relevant tags that categorize your post
+6. Tags should be lowercase, hyphenated words (e.g., "machine-learning", "web-development")
+7. Common tag categories include: technology, programming, ai, web-development, productivity, tools

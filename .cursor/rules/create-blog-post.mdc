@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Creating a New Blog Post
+
+Use the `hugo` CLI to create new posts: `hugo new content/posts/YYYY-MM-DD-title.md`
+- Replace YYYY-MM-DD with the date of the post.
+- If the post is for today, use `date -u +"%Y-%m-%dT%H:%M:%SZ"` to determine today's date.
+- Choose a pithy title but keep it short.
+- The title in the filename should be a lowercased and hyphenated version of the blog post title (minus emoji).
+
+Seed the blog post with:
+- Start the title with a suitable emoji for the topic.
+- Add 2-5 suitable tags to the frontmatter section.
+
+Provide a 2-4 bullet points about the topic. Do NOT write the blog post or any prose.

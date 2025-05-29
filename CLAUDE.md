@@ -26,10 +26,10 @@ This will:
 
 Create a new blog post:
 ```bash
-hugo new content/posts/YYYY-MM-DD-title.md
+hugo new content/posts/title.md
 ```
 
-Replace YYYY-MM-DD with the current date and title with a lowercase hyphenated version of your post title.
+Replace title with a lowercase hyphenated version of your post title.
 
 For current date in the correct format:
 ```bash
